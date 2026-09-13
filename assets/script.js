@@ -14,3 +14,17 @@ siteNav.querySelectorAll("a").forEach((link) => {
     navToggle.setAttribute("aria-expanded", "false");
   });
 });
+
+const scrollCue = document.getElementById("scroll-cue");
+if (scrollCue) {
+  const hideCue = () => scrollCue.classList.add("is-hidden");
+  const autoHideTimer = setTimeout(hideCue, 3000);
+  window.addEventListener(
+    "scroll",
+    () => {
+      clearTimeout(autoHideTimer);
+      hideCue();
+    },
+    { once: true, passive: true }
+  );
+}
