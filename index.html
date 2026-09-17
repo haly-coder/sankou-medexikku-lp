@@ -7,7 +7,7 @@
 <meta name="description" content="サンコウメディックス株式会社は、気道確保カニューレを中心とした医療機器の開発・製造を行う医療系企業です。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
           <circle cx="27" cy="20" r="2.4" fill="currentColor"/>
         </svg>
       </span>
-      <span class="logo-text">サンコウメディックス</span>
+      <span class="logo-text">サンコウメディックス<em>MEDICAL DEVICE MANUFACTURER</em></span>
     </a>
     <nav class="site-nav" id="site-nav">
       <a href="#problem">医療現場の課題</a>
@@ -42,24 +42,47 @@
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-copy">
-        <p class="eyebrow">気道確保カニューレメーカー</p>
-        <h1>確かな気道確保を、<br>すべての医療現場へ。</h1>
-        <p class="hero-lead">
+        <p class="eyebrow reveal">気道確保カニューレメーカー</p>
+        <h1 class="reveal" style="--d:1">確かな気道確保を、<br>すべての医療現場へ。</h1>
+        <p class="hero-lead reveal" style="--d:2">
           サンコウメディックス株式会社は、気道確保カニューレの開発・製造を主軸とする医療機器メーカーです。
           臨床現場の声をもとに、安全性と装着性を追求した製品づくりを行っています。
         </p>
-        <div class="hero-actions">
+        <div class="hero-actions reveal" style="--d:3">
           <a href="#contact" class="btn btn-primary">資料請求・お問い合わせ</a>
           <a href="#lineup" class="btn btn-outline">製品ラインナップを見る</a>
         </div>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <svg viewBox="0 0 400 400" class="hero-illustration">
-          <circle cx="200" cy="200" r="180" class="ring ring-1"/>
-          <circle cx="200" cy="200" r="140" class="ring ring-2"/>
-          <path d="M120 200c0-55 35-95 80-95s80 40 80 95-35 95-80 95" class="cannula-path"/>
-          <circle cx="280" cy="200" r="14" class="cannula-tip"/>
-          <circle cx="200" cy="200" r="6" class="dot"/>
+      <div class="hero-visual reveal" style="--d:2" aria-hidden="true">
+        <svg viewBox="0 0 480 260" class="hero-illustration">
+          <path d="M12,12 L12,28 M12,12 L28,12" class="corner-mark"/>
+          <path d="M468,12 L468,28 M468,12 L452,12" class="corner-mark"/>
+          <path d="M12,248 L12,232 M12,248 L28,248" class="corner-mark"/>
+          <path d="M468,248 L468,232 M468,248 L452,248" class="corner-mark"/>
+
+          <line x1="40" y1="140" x2="450" y2="140" class="centerline"/>
+
+          <rect x="40" y="122" width="30" height="36" rx="6" class="spec-solid"/>
+          <rect x="70" y="130" width="300" height="20" rx="10" class="spec-outline"/>
+          <ellipse cx="345" cy="140" rx="30" ry="24" class="spec-cuff"/>
+          <path d="M370,130 C395,132 415,136 428,140 C415,144 395,148 370,150 Z" class="spec-solid"/>
+
+          <line x1="70" y1="86" x2="428" y2="86" class="dim-line"/>
+          <line x1="70" y1="80" x2="70" y2="92" class="dim-tick"/>
+          <line x1="428" y1="80" x2="428" y2="92" class="dim-tick"/>
+          <text x="249" y="76" text-anchor="middle" class="spec-value">L = 220mm</text>
+
+          <line x1="55" y1="122" x2="55" y2="42" class="leader-line"/>
+          <circle cx="55" cy="122" r="3" class="leader-dot"/>
+          <text x="55" y="30" text-anchor="middle" class="spec-label">コネクタ部</text>
+
+          <line x1="345" y1="164" x2="345" y2="216" class="leader-line"/>
+          <circle cx="345" cy="164" r="3" class="leader-dot"/>
+          <text x="345" y="234" text-anchor="middle" class="spec-label">低圧カフ構造</text>
+
+          <line x1="415" y1="136" x2="440" y2="58" class="leader-line"/>
+          <circle cx="415" cy="136" r="3" class="leader-dot"/>
+          <text x="440" y="46" text-anchor="middle" class="spec-label">先端テーパー形状</text>
         </svg>
       </div>
     </div>
@@ -68,19 +91,19 @@
 
   <section class="stats">
     <div class="container stats-grid">
-      <div class="stat">
+      <div class="stat reveal">
         <span class="stat-value">30<span class="stat-unit">年以上</span></span>
         <span class="stat-label">医療機器製造の実績</span>
       </div>
-      <div class="stat">
+      <div class="stat reveal" style="--d:1">
         <span class="stat-value">15<span class="stat-unit">サイズ</span></span>
         <span class="stat-label">豊富なサイズ展開</span>
       </div>
-      <div class="stat">
+      <div class="stat reveal" style="--d:2">
         <span class="stat-value">ISO<span class="stat-unit">13485</span></span>
         <span class="stat-label">品質マネジメント認証</span>
       </div>
-      <div class="stat">
+      <div class="stat reveal" style="--d:3">
         <span class="stat-value">24<span class="stat-unit">時間</span></span>
         <span class="stat-label">サポート体制</span>
       </div>
@@ -89,18 +112,18 @@
 
   <section id="problem" class="section problem">
     <div class="container">
-      <p class="section-eyebrow">MEDICAL ISSUE</p>
-      <h2 class="section-title">医療現場が抱える、気道確保の課題</h2>
+      <p class="section-eyebrow reveal">MEDICAL ISSUE</p>
+      <h2 class="section-title reveal">医療現場が抱える、気道確保の課題</h2>
       <div class="problem-grid">
-        <div class="problem-card">
+        <div class="problem-card reveal">
           <h3>患者ごとの体格差</h3>
           <p>気道の太さや形状は患者によって大きく異なり、画一的な製品では適合しないケースがあります。</p>
         </div>
-        <div class="problem-card">
+        <div class="problem-card reveal" style="--d:1">
           <h3>装着時の負担</h3>
           <p>処置の迅速さが求められる一方、装着時の患者への負担や医療従事者の手技負担も軽視できません。</p>
         </div>
-        <div class="problem-card">
+        <div class="problem-card reveal" style="--d:2">
           <h3>長期留置時の安全性</h3>
           <p>長期間の留置が必要な場合、粘膜への刺激や閉塞リスクへの対策が求められます。</p>
         </div>
@@ -110,31 +133,31 @@
 
   <section id="features" class="section features">
     <div class="container">
-      <p class="section-eyebrow">FEATURES</p>
-      <h2 class="section-title">サンコウメディックスの気道確保カニューレが選ばれる理由</h2>
+      <p class="section-eyebrow reveal">FEATURES</p>
+      <h2 class="section-title reveal">サンコウメディックスの気道確保カニューレが選ばれる理由</h2>
       <div class="features-grid">
-        <div class="feature-card">
+        <div class="feature-card reveal">
           <div class="feature-icon" aria-hidden="true">
             <svg viewBox="0 0 48 48" width="28" height="28"><path d="M24 4l16 8v12c0 11-7 18-16 20-9-2-16-9-16-20V12z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M16 24l6 6 12-12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <h3>安全性を重視した設計</h3>
           <p>粘膜への負担を抑える先端形状と素材選定により、留置時の安全性向上を追求しています。</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card reveal" style="--d:1">
           <div class="feature-icon" aria-hidden="true">
             <svg viewBox="0 0 48 48" width="28" height="28"><rect x="6" y="14" width="36" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M14 14v-4a4 4 0 014-4h12a4 4 0 014 4v4" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
           </div>
           <h3>豊富なサイズ展開</h3>
           <p>新生児から成人まで対応する幅広いサイズラインナップで、患者ごとの最適な選択を可能にします。</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card reveal" style="--d:2">
           <div class="feature-icon" aria-hidden="true">
             <svg viewBox="0 0 48 48" width="28" height="28"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M24 14v10l7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
           </div>
           <h3>迅速な装着性</h3>
           <p>緊急時にも対応できるよう、手技に不慣れな環境でも扱いやすい構造を採用しています。</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card reveal" style="--d:3">
           <div class="feature-icon" aria-hidden="true">
             <svg viewBox="0 0 48 48" width="28" height="28"><path d="M8 24h8l4-12 8 24 4-12h8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
@@ -147,10 +170,10 @@
 
   <section id="lineup" class="section lineup">
     <div class="container">
-      <p class="section-eyebrow">PRODUCT LINEUP</p>
-      <h2 class="section-title">製品ラインナップ</h2>
+      <p class="section-eyebrow reveal">PRODUCT LINEUP</p>
+      <h2 class="section-title reveal">製品ラインナップ</h2>
       <div class="lineup-grid">
-        <div class="lineup-card">
+        <div class="lineup-card reveal">
           <div class="lineup-badge">スタンダード</div>
           <h3>SKM-スタンダードカニューレ</h3>
           <p>幅広い症例に対応する標準タイプ。安定した気道確保と扱いやすさを両立。</p>
@@ -160,7 +183,7 @@
             <li>単回使用</li>
           </ul>
         </div>
-        <div class="lineup-card featured">
+        <div class="lineup-card featured reveal" style="--d:1">
           <div class="lineup-badge">ロングタイプ</div>
           <h3>SKM-ロングステイカニューレ</h3>
           <p>長期留置に配慮した低刺激設計。粘膜への負担軽減を目指したカフ構造を採用。</p>
@@ -170,7 +193,7 @@
             <li>長期留置対応</li>
           </ul>
         </div>
-        <div class="lineup-card">
+        <div class="lineup-card reveal" style="--d:2">
           <div class="lineup-badge">緊急対応</div>
           <h3>SKM-クイックカニューレ</h3>
           <p>救急・災害医療の現場を想定し、迅速な装着を実現するシンプル構造。</p>
@@ -181,17 +204,17 @@
           </ul>
         </div>
       </div>
-      <p class="lineup-note">※ 製品名・仕様は一例です。詳細な仕様書・添付文書はお問い合わせフォームよりご請求ください。</p>
+      <p class="lineup-note reveal">※ 製品名・仕様は一例です。詳細な仕様書・添付文書はお問い合わせフォームよりご請求ください。</p>
     </div>
   </section>
 
   <section id="company" class="section company">
     <div class="container company-inner">
       <div>
-        <p class="section-eyebrow">COMPANY</p>
-        <h2 class="section-title">会社概要</h2>
+        <p class="section-eyebrow reveal">COMPANY</p>
+        <h2 class="section-title reveal">会社概要</h2>
       </div>
-      <table class="company-table">
+      <table class="company-table reveal" style="--d:1">
         <tbody>
           <tr><th>会社名</th><td>サンコウメディックス株式会社</td></tr>
           <tr><th>事業内容</th><td>気道確保カニューレをはじめとする医療機器の開発・製造・販売</td></tr>
@@ -206,12 +229,12 @@
 
   <section id="contact" class="section contact">
     <div class="container contact-inner">
-      <p class="section-eyebrow">CONTACT</p>
-      <h2 class="section-title">お問い合わせ・資料請求</h2>
-      <p class="contact-lead">
+      <p class="section-eyebrow reveal">CONTACT</p>
+      <h2 class="section-title reveal">お問い合わせ・資料請求</h2>
+      <p class="contact-lead reveal" style="--d:1">
         製品の詳細資料や添付文書のご請求、導入に関するご相談は、下記よりお気軽にお問い合わせください。
       </p>
-      <div class="contact-actions">
+      <div class="contact-actions reveal" style="--d:2">
         <a href="mailto:info@example.com" class="btn btn-primary">メールでお問い合わせ</a>
         <span class="contact-tel">TEL：〈電話番号をご記入ください〉</span>
       </div>
