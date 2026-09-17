@@ -7,6 +7,9 @@
 - `index.html` — ページ本体
 - `assets/style.css` — スタイル
 - `assets/script.js` — ナビゲーション開閉・年号表示
+- `assets/images/problem-bg.jpg` — [Pexels](https://www.pexels.com/photo/modern-hospital-icu-room-with-medical-equipment-39459348/) のフリー素材（Pexelsライセンス、商用利用可・クレジット表記不要、撮影者: Stéf -b.）
+- `assets/images/features-bg.jpg` — [Pexels](https://www.pexels.com/photo/medical-tools-and-vaccines-arrangement-32418225/) のフリー素材（Pexelsライセンス、商用利用可・クレジット表記不要、撮影者: Marta Branco）
+- `assets/images/lineup-bg.jpg` — [Pexels](https://www.pexels.com/photo/surgical-instruments-in-a-hospital-24193873/) のフリー素材（Pexelsライセンス、商用利用可・クレジット表記不要、撮影者: Stéf -b.）
 
 ## ローカルで確認する
 
